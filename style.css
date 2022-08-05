@@ -121,23 +121,25 @@ body {
 .container {
     border-color: red;
     border: 5px solid;
-    height: 760px;
+    height: 680px;
     background-color: rgb(217, 217, 217);
 }
 
 .card-panel {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
     height: 500px;
     margin-top: 2rem;
     border: 3px solid;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 
 .card {
     border: 1px solid;
     width: 30%;
-    height: 150px;
+    height: 180px;
     padding: 20px 0;
     margin-left: 3rem;
 }
@@ -151,8 +153,12 @@ body {
 .card-panel p {
     color: black;
     padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 5px;
 }
 .card-panel i {
-    float:right;
+    color: rgba(68, 68, 68, 0.46);
+    float: right;
+    padding-right: 10px;
 }
 
