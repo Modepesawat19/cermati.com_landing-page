@@ -10,36 +10,60 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* NOTIFICATION PANEL */
 
-@media only screen and (max-width: 420px) {
-    .container-notif .notif-panel {
+@media only screen and (max-width: 720px) {
+    .cookienotif .container-notif {
+        width: 95%;
         display: flex;
         flex-wrap: wrap;
         height: 150px;
-        background-color: rgb(217, 217, 217);
-        
+        position: relative;
+        left: 10px;
+        z-index: 3;
+        background:  rgb(217, 217, 217);
     }
+
+
 }
 
-
-@media only screen and (max-width: 720px) {
-    .hero-shot-section .navbar-header {
-        display: block;
-        margin-top: 4.5rem;
-    }
+.cookienotif {
+    background: rgb(217, 217, 217);
+    position: fixed;
+    z-index: 3;
 }
-
 
 .container-notif {
+    display: block;
+    width: 100%;
+    padding: 10px 40px;
+    position: fixed;
+    background:  rgb(217, 217, 217);
+}
+
+.content-panel {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 720px;
+    
+}
+
+.cookienotif p {
+    width: 80%;
+    color: rgb(76, 76, 76);
+}
+
+
+/* .container-notif {
     display: block;
     height: 11vh;
     background-color: rgb(217, 217, 217);
     align-items: center;
     padding-top: 20px;
     
-}
+} */
 
-.notif-panel {
+/* .notif-panel {
     display: flex;
     max-width: 720px;
     height: 15px;
@@ -48,13 +72,8 @@ body {
     padding-left: 2rem;
     padding-right: 2rem;
    
-}
-.btn a {
-    color: black;
-}
-.notif-panel .policy{
-    color: blue;
-}
+} */
+
 
 .notif-panel p {
     color:black;
@@ -65,16 +84,25 @@ body {
     padding-top: 0.5rem;
     text-align: center;
     justify-content: center;
-    width: 140px;
+    width: 100px;
     height: 30px;
-    background-color: rgb(33, 124, 189);
+    background-color: rgb(81, 135, 251);
     border: 0.5px solid;
-    border-color: rgb(33, 124, 189);
+    border-color: rgb(81, 135, 251);
     color: white;
     text-shadow: 1px 1px 1px rgb(120, 120, 120);
     border-radius: 3px;
     padding-left: 1px;
     padding-right: 1px;
+}
+
+/* hero shot */
+
+
+@media only screen and (max-width: 720px) {
+    .hero-shot-section .navbar-header {
+        display: block;
+    }
 }
 
 .hero-shot-section {
@@ -144,7 +172,10 @@ body {
     font-weight: bolder;
 }
 
+/* hero shot end*/
 
+
+/*highlight panel card */
 .highlights-panel{
     height: 290px;
     background-color: rgb(217, 217, 217);
@@ -335,8 +366,10 @@ body {
      position: relative;
     }
  }
+/*highlight panel card END*/
 
 
+/* Footer */
 footer {
     background-color: rgb(2, 2, 63);
     height: 100px;
@@ -357,7 +390,10 @@ footer .text-footer {
     color: rgba(255, 255, 255, 0.345);
     text-shadow: 1px 1px 1px rgba(10, 10, 205, 0.348);
 }
+/* footer END */
 
+
+/* NEWSLETTER PANEL */
 .popup .overlay {
     position: fixed;
     padding-right: 1rem;
@@ -369,23 +405,25 @@ footer .text-footer {
     opacity: 0.9;
     z-index: 1;
     display: none;
+    border-radius: 10px;
    
 }
 
 .popup .content {
     position: relative;
-    width: 450px;
+    width: 470px;
     height: 10px;
     top: 18px;
     left: 50%;
     transform: translate(-50%,50%);
     z-index: 2;
     box-sizing: border-box;
+    padding-right: 15px;
 }
 .popup .close-btn {
     position: absolute;
-    padding-right: 10px;
-    right: -50px;
+    padding-right: 20px;
+    right: -30px;
     top: -10px;
     width: 30px;
     height: 70px;
@@ -403,6 +441,7 @@ footer .text-footer {
 
 .popup.active .overlay {
     display: block;
+    
 }
 
 .popup.active .content {
@@ -452,3 +491,4 @@ footer .text-footer {
     }
     
  }
+/* NEWSLETTER PANEL END*/

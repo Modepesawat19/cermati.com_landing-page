@@ -12,14 +12,16 @@
   </head>
   <body>
 <!-- Header -->
-    <div class="container-notif">
-      <div class="notif-panel">
-        <p>By accessing using this website, you acknowlodge that you have read and understand our
-          <a href="#" class="policy">Cooking Policy</a>, <a href="#"class="policy">Privacy Policy</a>, and our <a href="#" class="policy">Terms Of Services</a>.
-        </p>
-        <a href="#"type="submit" class="btn">Got it</a>
-      </div> 
-    </div>
+    <section class="cookienotif" id="cookiebtn">
+      <div class="container-notif">
+        <div class="content-panel">
+          <p>By accessing using this website, you acknowlodge that you have read and understand our
+            <a href="#" class="policy">Cooking Policy</a>, <a href="#"class="policy">Privacy Policy</a>, and our <a href="#" class="policy">Terms Of Services</a>.
+          </p>
+          <a href="#"type="submit" class="btn" onclick="accept()">Got it</a>
+        </div> 
+      </div>
+    </section>
     <section>
       <div class="hero-shot-section">
         <div class="navbar-header">
@@ -103,22 +105,29 @@
     <div class="popup active" id="popup-1">
       <div class="overlay">
         <div class="content">
-          <div class="close-btn" onclick="togglePopup()">&times;</div>
+          <div class="close-btn" onclick="remove()">&times;</div>
             <h2>Get latest updates in web technologies</h2>
             <p>I write articles related to web technologies, such as design trends, development
               tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get
               them all.</p>
             <input class="email" type="email" name="" value="" placeholder="Email address" required>
-            <button class="btn-count" type="button" name="button">Count me in !</button>
+            <button class="btn-count" type="button" name="button" onclick="yes()">Count me in !</button>
           </div>
         </div>
       </div>
     </div>
    <script src="main.js"></script>
    <script>
+
     function togglePopup(){
       const sliding = document.getElementById ('popup');
     }
+    function yes(){
+      const sliding = document.getElementById ('popup');
+    }
+
+    
+    
    </script>
   </body>
 </html>
