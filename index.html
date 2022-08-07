@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- My CSS -->
     <link rel="stylesheet" href="style.css">
-    <title>Cermati Test</title>
+    <title>​Sofyan Hariri | Cermati.com Front-end Developer Entry Test</title>
 <!-- font-awesome -->
   <link href="fontawesome/css/all.css" rel="stylesheet">
 <!-- w3schools icon -->
@@ -13,6 +13,14 @@
   </head>
   <body>
 <!-- Header -->
+    <div class="container-notif">
+      <div class="notif-panel">
+        <p>By accessing using this website, you acknowlodge that you have read and understand our
+          <a href="#" class="policy">Cooking Policy</a>, <a href="#"class="policy">Privacy Policy</a>, and our <a href="#" class="policy">Terms Of Services</a>.
+        </p>
+        <a href="#"type="submit" class="btn">Got it</a>
+      </div> 
+    </div>
     <section>
       <div class="hero-shot-section">
         <div class="navbar-header">
@@ -30,7 +38,7 @@
       <div class="highlights">
         <div class="container-1">
           <div class="content-1">
-            <h1>How Can I Help You ?</h1>
+            <h2>How Can I Help You ?</h2>
             <p> Our work then targeted, best practices outcomes social innovation synergy.<br>
               Venture philantrophy, revolutionary inclusive policymaker relief. User-centered <br>program areas scale.</p>
           </div>
@@ -39,7 +47,7 @@
     </section>
     <section class="card-content">
       <div class="container">
-        <div class="card-panel mobile">
+        <div class="card-panel">
           <div class="card">
             <i class="fa-regular fa-comments fa-xl icon"></i>
             <h1>Consult</h1>
@@ -86,6 +94,38 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div class="container-footer">
+        <div class="copyright">
+          <i class='far fa-copyright icons' style='font-size:14px'></i><span class="text-footer"> 2022 Sofyan Hariri. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+    <div class="sliding-panel active" id="sliding-panel">
+      <div class="container-sliding">
+        <form action="" class="content-slide">
+          <h2>Get latest updates in web technologies</h2>
+          <p>I write articles related to web technologies, such as design trends, development
+            tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get
+            them all.</p>
+          <div class="email-box">
+            <input class="email" type="email" name="" value="" placeholder="Email address" required>
+            <button class="btn-count" type="button" name="button">Count me in !</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-container" id="modal-container">
+          <div class="close btn" type="button" id="close">
+            <i class="fa-solid fa-xmark" type="button"></i>
+          </div>
+        </div>
+      </div>
+    </div>
    <script src="main.js"></script>
+   <script>
+    function popupToggle(){
+      const sliding = document.getElementById ('popup');
+    }
+   </script>
   </body>
 </html>
