@@ -8,8 +8,7 @@
     <title>​Sofyan Hariri | Cermati.com Front-end Developer Entry Test</title>
 <!-- font-awesome -->
   <link href="fontawesome/css/all.css" rel="stylesheet">
-<!-- w3schools icon -->
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
   </head>
   <body>
 <!-- Header -->
@@ -101,29 +100,23 @@
         </div>
       </div>
     </footer>
-    <div class="sliding-panel active" id="sliding-panel">
-      <div class="container-sliding">
-        <form action="" class="content-slide">
-          <h2>Get latest updates in web technologies</h2>
-          <p>I write articles related to web technologies, such as design trends, development
-            tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get
-            them all.</p>
-          <div class="email-box">
+    <div class="popup active" id="popup-1">
+      <div class="overlay">
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h2>Get latest updates in web technologies</h2>
+            <p>I write articles related to web technologies, such as design trends, development
+              tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get
+              them all.</p>
             <input class="email" type="email" name="" value="" placeholder="Email address" required>
             <button class="btn-count" type="button" name="button">Count me in !</button>
-          </div>
-        </form>
-      </div>
-      <div class="modal-container" id="modal-container">
-          <div class="close btn" type="button" id="close">
-            <i class="fa-solid fa-xmark" type="button"></i>
           </div>
         </div>
       </div>
     </div>
    <script src="main.js"></script>
    <script>
-    function popupToggle(){
+    function togglePopup(){
       const sliding = document.getElementById ('popup');
     }
    </script>

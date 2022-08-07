@@ -1,5 +1,5 @@
 let cookieModal = document.querySelector(".sliding-panel")
-
+let closeCookieBtn = document.querySelector(".close.btn")
 let countCookiebtn = document.querySelector(".btn-count")
 
 
