@@ -12,15 +12,15 @@ body {
 
 /* NOTIFICATION PANEL */
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 520px) {
     .cookienotif .container-notif {
-        width: 95%;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
-        height: 150px;
+        height: 140px;
         position: relative;
         left: 10px;
-        z-index: 3;
+        z-index: 1;
         background:  rgb(217, 217, 217);
     }
 
@@ -469,16 +469,16 @@ footer .text-footer {
     .overlay {
     display: flex;
     flex-wrap: wrap;
-    width: 50px;
-     position: fixed;
-     transform: translate(-10%,-80%) scale(1);
-     z-index:3;
+    width: 100px;
+    position: fixed;
+    transform: translate(-10%,-30%) scale(1);
+    z-index:3;
     }
 
     .overlay .content {
         display: flex;
         flex-wrap: wrap;
-        max-width: 300px;
+        max-width: 320px;
         text-align: center;
     }
     .email {
@@ -489,6 +489,7 @@ footer .text-footer {
     .btn-count {
         width: 100%;
     }
-    
  }
+
+ 
 /* NEWSLETTER PANEL END*/

@@ -18,7 +18,7 @@
           <p>By accessing using this website, you acknowlodge that you have read and understand our
             <a href="#" class="policy">Cooking Policy</a>, <a href="#"class="policy">Privacy Policy</a>, and our <a href="#" class="policy">Terms Of Services</a>.
           </p>
-          <a href="#"type="submit" class="btn" onclick="accept()">Got it</a>
+          <a href=""type="submit" class="btn" onclick="acceptCookie()">Got it</a>
         </div> 
       </div>
     </section>
@@ -110,7 +110,7 @@
             <p>I write articles related to web technologies, such as design trends, development
               tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get
               them all.</p>
-            <input class="email" type="email" name="" value="" placeholder="Email address" required>
+            <input class="email" onsubmit="sendEmail(); reset(); return false" type="email" name="" value="" placeholder="Email address" required>
             <button class="btn-count" type="button" name="button" onclick="yes()">Count me in !</button>
           </div>
         </div>
@@ -118,7 +118,6 @@
     </div>
    <script src="main.js"></script>
    <script>
-
     function togglePopup(){
       const sliding = document.getElementById ('popup');
     }
@@ -126,7 +125,10 @@
       const sliding = document.getElementById ('popup');
     }
 
-    
+    function togglePopup(){
+      const sliding = document.getElementById ('cookiebtn');
+    }
+
     
    </script>
   </body>
