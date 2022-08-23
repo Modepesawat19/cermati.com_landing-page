@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="stylecontactform.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="contact-box">
+            <h1 class="title">Contact Me</h1>
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" id="name" class="input-field" placeholder="Your Name" required>
+                <input type="email" id="email" class="input-field" placeholder="Your Email" required>
+                <input type="number" id="phone" class="input-field" placeholder="Phone" required>
+                <input type="text" id="subject" class="input-field" placeholder="Subject" required>
+                <textarea type="text" id="Message" class="input-field textarea-field" placeholder="Your Messages" required></textarea>
+                <button type="submit" onclick="sendEmail" value="Send Email" class="submitBtn">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "sofyanhariri19@gmail.com",
+            Password : "Iyan191919",
+            To : 'sofyanhariri19@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New Contact Form Enquriy",
+            Body : "Name: " + document.getElementById("name").value
+                + "<br> Email: " + document.getElementById("email").value
+                + "<br> Phone no: " + document.getElementById("phone").value
+                + "<br> Message: " + document.getElementById("Message").value
+        }).then(
+        message => alert("Message sent successfully")
+        );
+    }
+    </script>
+</body>
+</html>
