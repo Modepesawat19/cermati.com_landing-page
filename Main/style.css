@@ -108,7 +108,7 @@ body {
 .hero-shot-section {
     width: 100%;
     height: 80vh;
-    background-image: linear-gradient(rgba(8, 20, 93, 0.75),rgba(8, 20, 93, 0.75)),url(assets/work-desk__dustin-lee.jpg);
+    background-image: linear-gradient(rgba(8, 20, 93, 0.75),rgba(8, 20, 93, 0.75)),url(../assets/work-desk__dustin-lee.jpg);
     background-size: cover;
     position: relative;
 }
